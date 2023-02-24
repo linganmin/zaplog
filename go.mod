@@ -1,4 +1,4 @@
-module zaplog
+module linganmin/zaplog
 
 go 1.19
 
