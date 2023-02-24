@@ -10,6 +10,8 @@
 
 ## Usage
 
+If your `ctx` have `request_id` or `trace_id` key value pair,zaplog will append field to output struct, Such as:
+
 ```golang
 
 
