@@ -11,7 +11,7 @@ import (
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"
 
-	"zaplog/metadatax"
+	"github.com/linganmin/zaplog/metadatax"
 )
 
 // setLogWriter

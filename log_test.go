@@ -7,7 +7,7 @@ import (
 
 	"github.com/google/uuid"
 
-	"zaplog/metadatax"
+	"github.com/linganmin/zaplog/metadatax"
 )
 
 type user struct {
