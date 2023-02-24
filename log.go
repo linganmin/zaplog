@@ -10,8 +10,6 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"
-
-	"github.com/linganmin/zaplog/metadatax"
 )
 
 // setLogWriter
@@ -51,7 +49,7 @@ func FromContext(ctx context.Context) *zap.SugaredLogger {
 	}
 
 	var fields []zap.Field
-	for _, key := range metadatax.Keys {
+	for _, key := range Keys {
 		if value, ok := ctx.Value(key).(string); ok {
 			fields = append(fields, zap.String(key, value))
 		}

@@ -1,4 +1,4 @@
-package metadatax
+package zaplog
 
 const (
 	reqIdKey   = "request_id"

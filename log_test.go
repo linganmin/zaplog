@@ -6,8 +6,6 @@ import (
 	"testing"
 
 	"github.com/google/uuid"
-
-	"github.com/linganmin/zaplog/metadatax"
 )
 
 type user struct {
@@ -18,8 +16,8 @@ type user struct {
 
 func TestFromContext(t *testing.T) {
 	ctx := context.Background()
-	ctx = context.WithValue(ctx, metadatax.Keys[0], uuid.NewString())
-	ctx = context.WithValue(ctx, metadatax.Keys[1], uuid.NewString())
+	ctx = context.WithValue(ctx, Keys[0], uuid.NewString())
+	ctx = context.WithValue(ctx, Keys[1], uuid.NewString())
 
 	logger := FromContext(ctx)
 
